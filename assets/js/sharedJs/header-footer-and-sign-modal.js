@@ -21,7 +21,7 @@ document.querySelector(`.upper-page`).innerHTML = `<div class="container">
 <div class="header ">
 
     <a href="/index.html" >
-        <div class="logo"><img src="../assets/media/images/logo.ng.png" alt="ink waves logo">
+        <div class="logo"><img src="/assets/media/images/logo.ng.png" alt="ink waves logo">
             <span style="font-family:  cairo; font-weight: bold; color: rgb(17, 78, 114);">InkWaves</span>
 
         </div>
