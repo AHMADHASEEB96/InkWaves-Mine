@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- page icon -->
+    <link rel="icon" href="./assets/media/images/logo.ng.png">
+    <!-- Page title -->
+    <title> Ink waves </title>
+    <!-- css bundle -->
+    <!-- summon the font awesome library -->
+    <link rel="stylesheet" href="./assets/css/fa-css/all.min.css">
+    <!-- summon the bootstrap toolkit -->
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css.map">
+    <!-- summon the normalization file -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!-- summon the media query stylesheet -->
+    <!-- summon the stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- summon the Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=JetBrains+Mono:wght@100;200;300;400&family=Mulish:wght@200;300;400;500;600;700;800;900&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,200;0,300;0,600;0,800;0,900;1,200;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- <meta name="google-signin-client_id" content="536158144980-493s2fasqtibjfhfgebavsvvcr98l81s.apps.googleusercontent.com"> -->
+</head>
+
+<body>
+    
+    
+     
+        <div class="body-overlay hidden"></div>
+
+    <!-- ---------------------------------------------------------------Initiate Sign Modal window -->
+    <div id="sign-modal" class="hidden"></div>
+
+    <!--  Initiate header and navbar  -->
+    <div class="background-opacity hidden"></div>
+    <div class="upper-page"></div>
+
+    <div id="landing-page">
+
+
+        <!-- ---------------------------------------------------------------Initiate hero section -->
+        <div class="hero" sectionOf="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h3>All your printing and book selling services <br>in one place</h3>
+                    <p class="hero-description">
+                        Find the best selling books or Print one along with printing all your sheets with multiple
+                        options satisfying all of your needs.
+                    </p>
+                    <button id="book-store-btn" class="hero-service-btn main-hero-service-btn"> <a
+                            href="/pages/book-store.html"> Book Store </a></button>
+                    <button id="print-now-btn" class="hero-service-btn secondary-hero-service-btn"> Print Now</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hero-nav-container">
+            <ul class="hero-nav container">
+                <li style="font-family:  cairo; font-weight: bold; color: cadetblue;" id="page-nav-logo">InkWaves</li>
+                <!-- List items appended dynamically -->
+            </ul>
+        </div>
+
+
+        <!-- ---------------------------------------------------------------Initiate Recent books-->
+
+        <section class="recent-books section d-flex justify-content-center align-items-center" sectionOf="recent-books"
+            sectionTitle="Recent books">
+            <div class="spinner-border loader" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </section>
+
+        <!-- ------------------------------------------------------------ Initiate Printing Services description ------------------------------------------->
+        <section id="our-printing-advantages" class="section" sectionOf="printing-advantages"
+            sectionTitle="Printing advantages">
+            <div class="section-header d-flex justify-content-center align-items-center flex-column ">
+                <div class="narrower-container w-50 p-5 text-center">
+                    <h2>We provide the best printing services for you</h2>
+                    <p>Customers can choose any of the secure and fast payments methods available in the platform. We
+                        accept payment by credit card and wallet. You can add money to your wallet by the bank transfer
+                        or the credit card..</p>
+                </div>
+            </div>
+            <div class="container ">
+
+                <div class="advantage-box">
+                    <img class="advantage-box-img"
+                        src="https://www.moo.com/.imaging/scale/dam/91378ec4-5460-4dc6-bbf5-e65b941858e8/CRB-5326-Printfinity-tile-752x376.jpg"
+                        alt="advantage description image">
+                    <div class="advantage-box-details">
+                        <h6>The ability to control the prints</h6>
+                        <p>Print a different image or full color on the back of every single card at no extra cost for
+                            even more creative Postcards.</p>
+                    </div>
+                </div>
+                <div class="advantage-box">
+                    <img class="advantage-box-img"
+                        src="https://www.moo.com/.imaging/scale/dam/2cbbb991-35c2-4e17-9772-0662a558e045/PC-Mixed-Media-MOOPromise-752X3760.jpg"
+                        alt="advantage description image">
+                    <div class="advantage-box-details">
+                        <h6>The ability to control the prints</h6>
+                        <p>Print a different image or full color on the back of every single card at no extra cost for
+                            even more creative Postcards.</p>
+                    </div>
+                </div>
+                <div class="advantage-box">
+                    <img class="advantage-box-img"
+                        src="https://www.moo.com/.imaging/scale/dam/233d8bf2-9791-4216-ac17-87e66def737c/PC-Mixed-Media-ShortPrintruns-752X3760.jpg"
+                        alt="advantage description image">
+                    <div class="advantage-box-details">
+                        <h6>The ability to control the prints</h6>
+                        <p>Print a different image or full color on the back of every single card at no extra cost for
+                            even more creative Postcards.</p>
+                    </div>
+                </div>
+
+                <div class="advantage-box">
+                    <img class="advantage-box-img"
+                        src="https://www.moo.com/.imaging/scale/dam/91378ec4-5460-4dc6-bbf5-e65b941858e8/CRB-5326-Printfinity-tile-752x376.jpg"
+                        alt="advantage description image">
+                    <div class="advantage-box-details">
+                        <h6>The ability to control the prints</h6>
+                        <p>Print a different image or full color on the back of every single card at no extra cost for
+                            even more creative Postcards.</p>
+                    </div>
+                </div>
+                <div class="advantage-box">
+                    <img class="advantage-box-img"
+                        src="https://www.moo.com/.imaging/scale/dam/2cbbb991-35c2-4e17-9772-0662a558e045/PC-Mixed-Media-MOOPromise-752X3760.jpg"
+                        alt="advantage description image">
+                    <div class="advantage-box-details">
+                        <h6>The ability to control the prints</h6>
+                        <p>Print a different image or full color on the back of every single card at no extra cost for
+                            even more creative Postcards.</p>
+                    </div>
+                </div>
+                <div class="advantage-box">
+                    <img class="advantage-box-img"
+                        src="https://www.moo.com/.imaging/scale/dam/233d8bf2-9791-4216-ac17-87e66def737c/PC-Mixed-Media-ShortPrintruns-752X3760.jpg"
+                        alt="advantage description image">
+                    <div class="advantage-box-details">
+                        <h6>The ability to control the prints</h6>
+                        <p>Print a different image or full color on the back of every single card at no extra cost for
+                            even more creative Postcards.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ------------------------------------------------------------ Initiate Printing options------------------------------------------->
+        <section class="printing-options section" sectionOf="printing-options" sectionTitle="Printing options">
+
+        </section>
+
+        <!-- ------------------------------------------------------------ Initiate How I Print------------------------------------------->
+        <section class="how-i-print" sectionOf="how-i-print" sectionTitle="How i print?">
+            <div class="container">
+                <img class="printing-steps-img" src="./assets/media/images/pseudo.png" alt="">
+                <div class="printing-steps">
+                    <h1>How I Print ?</h1>
+                    <h5>Get the job done in 4 steps</h5>
+                    <div class="steps">
+
+                        <div class="step">
+                            <span><i class="fa-solid fa-file-import step-icon"></i></span>
+                            <div class="step-instructions">
+                                <h5> Upload your document</h5>
+                                <p>Login to your account after signing up and upload your PDF document to be printed.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span><i class="fa-solid fa-filter step-icon"></i></span>
+                            <div class="step-instructions">
+                                <h5>Select Printing Option</h5>
+                                <p>Select printing options like type of printing, colors, type of binding and delivery
+                                    option.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span><i class="fa-solid fa-cart-arrow-down step-icon"></i></span>
+                            <div class="step-instructions">
+                                <h5>Make Your Order</h5>
+                                <p>Place your order securely using your Visa Card, Master Card or your Print Wallet.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span><i class="fa-solid fa-truck step-icon"></i></span>
+                            <div class="step-instructions">
+                                <h5>Get Your Documents</h5>
+                                <p>Get your documents delivered to you by any of the delivery options offered on the
+                                    website.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------------------------------------------------ Initiate Reset password ------------------------------------------->
+        <div id="reset-pass" class="hidden">
+
+            <h1> Forgotten your password? No worries</h1>
+            <h4> Just Enter a new one and confirm it then you are ready to go</h4>
+
+            <form action="" class="sign-in-form sign-form ">
+
+                <h3> Welcome back </h3>
+                <p> Nice to see you again </p>
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Password">
+                <div class="remember-me">
+                    <label>
+                        <input type="checkbox" name="" id="">
+                        Remember me
+                    </label>
+                    <a href="reset-password.html"> <span> Forgot password? </span></a>
+                </div>
+                <button type="submit" class="sign-up-submit sign-buttons btn btn-primary">Sign in</button>
+
+            </form>
+        </div>
+
+
+    </div>
+
+    <!-- ------------------------------------------------------------ Initiate publish ------------------------------------------->
+
+    <!-- ------------------------------------------------------------ Initiate Testimonials ------------------------------------------->
+    <section class="testimonials section" sectionOf="testimonials" sectionTitle="Testimonials">
+
+    </section>
+
+
+    <!-- rating.js file -->
+    <script src="js/addons/rating.js"></script>
+    <!-- ------------------------------------------------------------ Initiate get in touch------------------------------------------->
+    <section class="attract-user attract-user-talk-with-us section" sectionOf="talk-with-us"
+        sectionTitle="talk with us">
+        <div class="container">
+            <h4> Get to Know us more </h4>
+            <p> We Promise a good printing and book selling service that pleases all the Fine tastes. <br>
+                <span class="talk-or-sign"> Talk with us know</span> to get to know more about what we can provide.
+            </p>
+            <div class="buttons "><button class=""> Check our service </button><button class="">Talk with us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------------------------------------ Initiate Footer ------------------------------------------->
+    <footer></footer>
+
+    <!-- js bundle -->
+    <!-- summon the font awesome library -->
+    <script src="assets/js/fa-js/all.min.js"></script>
+    <!-- summon the bootstrap toolkit -->
+    <script src="assets\js\bootstrap\bootstrap.min.js"></script>
+    <script src="assets\js\bootstrap\bootstrap.min.js.map"></script>
+    <!-- summon the js scripts -->
+    <script type="module" src="assets/js/sharedJs/books-slider.js"></script>
+    <script type="module" src="assets/js/sharedJs/header-footer-and-sign-modal.js"></script>
+    <script type='module' src="assets/js/sharedJs/printing-options.js"></script>
+    <script src="assets/js/sharedJs/testimonials.js"></script>
+    <script type="module" src="assets/js/app.js"></script>
+
+    <!-- <script src="assets/js/bootstrap.min.js.map"></script> -->
+
+
+    <!-- <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script> -->
+    <script src="https://accounts.google.com/gsi/client" async></script>
+    <!-- Decode the Jwt received from google  -->
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@4.0.0/build/cjs/index.min.js"></script>
+    
+</body>
+
+</html>

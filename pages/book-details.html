@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- page icon -->
+    <link rel="icon" href="/assets/media/images/logo.ng.png">
+    <!-- Page title -->
+    <title> Ink waves </title>
+    <!-- css bundle -->
+    <!-- summon the font awesome library -->
+    <link rel="stylesheet" href="/assets/css/fa-css/all.min.css">
+    <!-- summon the bootstrap toolkit -->
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css.map">
+    <!-- summon the normalization file -->
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <!-- summon the media query stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style-media-query.css">
+    <!-- summon the stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- summon the Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=JetBrains+Mono:wght@100;200;300;400&family=Mulish:wght@200;300;400;500;600;700;800;900&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,200;0,300;0,600;0,800;0,900;1,200;1,400;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="body-overlay hidden"></div>
+    <!-- ---------------------------------------------------------------  Initiate Sign Modal window -->
+    <div id="sign-modal" class="hidden"></div>
+
+
+    <!------------------------------------------------------------------  Initiate header and navbar  -->
+    <div class="background-opacity hidden"></div>
+    <div class="upper-page">
+    </div>
+<!-- Implement this her nav division even though it is not needed in this page (thats why it is hidden), just to avoid the error coming from the <script src="/assets/js/sharedJs/header-footer-and-sign-modal.js"></script>
+  because the script contains functions those targe this division, -->
+    <div class="hero-nav-container hidden">
+        <ul class="hero-nav container">
+            <li style="font-family:  cairo; font-weight: bold; color: cadetblue;" id="page-nav-logo">InkWaves</li>
+            <!-- List items appended dynamically -->
+        </ul>
+    </div>
+
+
+
+    <div id="landing-page">
+        <div class="page-announcement flex-center-all bg-dark my-2">
+            <p class="text-light"> This is an announcement </p>
+        </div>
+        <!-- ----------------------------------------------------------------------- Initiate Book Details -->
+
+        <section class="book-details-sec">
+
+     
+        </section>
+
+        <!-- ---------------------------------------------------------------Initiate Recent books-->
+        <section class="recent-books section hidde" sectionOf="recent-books" sectionTitle="Recent books"></section>
+
+
+        <!-- ------------------------------------------------------------ Initiate get in touch------------------------------------------->
+        <section class=" attract-user attract-user-surf-services section" sectionOf="talk-with-us"
+            sectionTitle="talk with us">
+            <div class="container">
+                <h4> Ready to Deal with our services ? </h4>
+                <p> We Promise a good printing and book selling service that pleases all the Fine tastes. <br>
+                    Check our services now to get to know more about what we can provide.
+                </p>
+                <div class="buttons "><button class=""> Check books gallery </button><button class=""> Print Now
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- ------------------------------------------------------------ Initiate Footer------------------------------------------->
+
+        <footer> </footer>
+
+        <!-- js bundle -->
+        <!-- summon the font awesome library -->
+        <script src="/assets/js/fa-js/all.min.js"></script>
+        <!-- summon the bootstrap toolkit -->
+        <script src="/assets/js/bootstrap/bootstrap.min.js"></script>
+        <script src="/assets/js/bootstrap/bootstrap.js"></script>
+        <!-- summon the app file -->
+        <script src="/assets/js/sharedJs/header-footer-and-sign-modal.js"></script>
+        <!-- <script src="/assets/js/sharedJs/books-slider.js"></script> -->
+        <script type="module" src="/assets/js/book-details.js"></script>
+        <script src="/assets/js/bootstrap.min.js.map"></script>
+</body>
+
+</html>

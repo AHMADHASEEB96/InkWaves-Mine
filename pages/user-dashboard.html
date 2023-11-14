@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- page icon -->
+    <link rel="icon" href="/assets/media/images/logo.ng.png">
+    <!-- Page title -->
+    <title> Ink waves </title>
+    <!-- css bundle -->
+    <!-- summon the font awesome library -->
+    <link rel="stylesheet" href="/assets/css/fa-css/all.min.css">
+    <!-- summon the bootstrap toolkit -->
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css.map">
+    <!-- summon the normalization file -->
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <!-- summon the media query stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style-media-query.css">
+    <!-- summon the stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- summon the Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=JetBrains+Mono:wght@100;200;300;400&family=Mulish:wght@200;300;400;500;600;700;800;900&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,200;0,300;0,600;0,800;0,900;1,200;1,400;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="body-overlay hidden"></div>
+    <!-- ---------------------------------------------------------------Initiate Sign Modal window -->
+    <div id="sign-modal" class="hidden"> </div>
+
+    <!--  Initiate header and navbar  -->
+    <div class="background-opacity hidden"></div>
+    <div class="upper-page"></div>
+
+    <div id="landing-page">
+        <!-- ---------------------------------------------------------------Initiate hero section -->
+        <section class="hero user-dashboard-hero" sectionOf="hero" sectionTitle=".">
+            <div class="container">
+                <div class="hero-content">
+                    <h3>Manage your account     </h3>
+                    <p class="hero-description">
+                       Surf your orders, wallet, update your information and more.
+                    </p>
+                    <!-- <button  class=" main-hero-service-btn hero-service-btn shop-more-btn"> Shop more </button>
+                    <button  class=" secondary-hero-service-btn hero-service-btn "> Print Now</button> -->
+                </div>
+            </div>
+
+        </section>
+
+        <div class="hero-nav-container ">
+            <ul class="hero-nav container">
+                <li style="font-family:  cairo; font-weight: bold; color: cadetblue;" id="page-nav-logo">InkWaves</li>
+                <!-- List items appended dynamically -->
+            </ul>
+        </div>
+        <!-- ---------------------------------------------------------------Initiate Orders section -->
+        <section class="user-orders m-3  " sectionOf="user-order" sectionTitle="Orders">
+            <div class="container  p-5">
+                <h3 class = "user-section-header" header-for="orders-section-content"> Orders </h3>
+                <hr>
+                <div id="orders-section-content" class = "user-div">
+                    <div class="orders-brief d-flex justify-content-between ">
+                        <div class="order-brief-box">
+                            <h6> Wallet </h6>
+                            <h2>1700 <span>EGP</span></h2>
+                        </div>
+                        <div class="order-brief-box"></div>
+                        <div class="order-brief-box"></div>
+                        <div class="order-brief-box  ">
+                            <h6> Orders </h6>
+                            <h2> 7 <span>Orders</span></h2>
+                        </div>
+                        <div class="order-brief-box"></div>
+                        <div class="order-brief-box"></div>
+                        <div class="order-brief-box  ">
+                            <h6> Files </h6>
+                            <h2> 18 <span>Files</span></h2>
+                        </div>
+                        <div class="order-brief-box"></div>
+                        <div class="order-brief-box"></div>
+                    </div>
+                    <h4 class="orders-history-title p-2"> Orders history </h4>
+                    <div class="orders-history ">
+                        <table class="table ">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col"> ID </th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Date</th>
+                                </tr>
+                            </thead>
+                            <tbody class="no-orders-yet hidden">
+                                <tr>
+
+                                    <td> No orders yet </td>
+                                </tr>
+                            </tbody>
+                            <tbody class='hidde'>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Value here</td>
+                                    <td> Value here </td>
+                                    <td>Value here</td>
+                                    <td>Value here</td>
+                                </tr>
+                                <!-- For each new order create a new tr and insert the values dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        <!-- ---------------------------------------------------------------Initiate Update info section -->
+        <section class="update-user-info m-3" sectionOf="update-user-details" sectionTitle="Update Info">
+            <div class="container p-5">
+                <h3 class = "user-section-header" header-for="update-user-info-content"> Update Information </h3>
+                <hr>
+                <div id="update-user-info-content" class = "user-div">
+                    <form action="" class="sign-up-form sign-form update-user-info-form hidde" ;
+                        onsubmit=" reset() ;return false">
+                        <label for="first-name"> First name </label>
+                        <input id="first-name" type="text" value="Ink">
+                        <label for="last-name">Last name</label>
+                        <input id="last-name" type="text" value="Waves">
+
+
+                        <h6>Gender</h6>
+                        <label for="male-radio" style="font-size: 12px;"> Male </label>
+                        <input id="" class="form-check-input" type="radio" id="male-radio">
+                        <label for="female-radio" style="font-size: 12px;"> Female </label>
+                        <input id="" class="form-check-input" type="radio" id="female-radio">
+
+                        <label for="phone-num"> Phone number </label>
+                        <input id="phone-num" type="phone" placeholder="Phone number">
+                        <h4>Update E-mail</h4>
+                        <label for="e-mail"> E-mail</label>
+                        <input id="e-mail" type="email" placeholder="E-mail" autocomplete="username">
+                        <label for="new-e-mail"> New e-mail</label>
+                        <input id="new-e-mail" type="email" placeholder="E-mail" autocomplete="username">
+                        <h4>Update password</h4>
+                        <label for="current-pass"> Current passwords</label>
+                        <input id="current-pass" type="password" placeholder="current pass">
+                        <label for="new-pass"> New passwords</label>
+                        <input id="new-pass" type="password" placeholder="Password">
+                        <label for="confirm-new-pass">Confirm new passwords</label>
+                        <input id="confirm-new-pass" type="password" placeholder="Confirm Password">
+
+
+                        <input type="submit" value="Update Info" class="btn btn-primary">
+                        </input>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ------------------------------------------------------------ Initiate get in touch------------------------------------------->
+        <section class="attract-user  talk-with-us section" sectionOf="talk-with-us" sectionTitle="talk with us">
+            <div class="container">
+                <h4> Get to Know us more </h4>
+                <p> We Promise a good printing and book selling service that pleases all the Fine tastes. <br>
+                    <span class="talk-or-sign"> Talk with us know</span> to get to know more about what we can provide.
+                </p>
+                <div class="buttons "><button class=""> Check our service </button><button class="">Talk with
+                        us</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------------------------------------------------ Initiate Footer------------------------------------------->
+        <footer></footer>
+
+        <!-- js bundle -->
+        <!-- summon the font awesome library -->
+        <script src="/assets/js/fa-js/all.min.js"></script>
+        <!-- summon the bootstrap toolkit -->
+        <script src="/assets/js/bootstrap/bootstrap.min.js"></script>
+        <script src="/assets/js/bootstrap/bootstrap.js"></script>
+        <!-- summon the app file -->
+        <script src="/assets/js/sharedJs/header-footer-and-sign-modal.js"></script>
+        <script src="/assets/js/user-dashboard.js"></script>
+        <script src="/assets/js/bootstrap.min.js.map"></script>
+</body>
+
+</html>

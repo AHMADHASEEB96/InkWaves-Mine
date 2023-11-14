@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- page icon -->
+    <link rel="icon" href="/assets/media/images/logo.ng.png">
+    <!-- Page title -->
+    <title> Ink waves </title>
+    <!-- css bundle -->
+    <!-- summon the font awesome library -->
+    <link rel="stylesheet" href="/assets/css/fa-css/all.min.css">
+    <!-- summon the bootstrap toolkit -->
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css.map">
+    <!-- summon the normalization file -->
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <!-- summon the media query stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style-media-query.css">
+    <!-- summon the stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- summon the Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=JetBrains+Mono:wght@100;200;300;400&family=Mulish:wght@200;300;400;500;600;700;800;900&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,200;0,300;0,600;0,800;0,900;1,200;1,400;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <div class="page-announcement d-flex justify-content-between align-items-center bg-dark text-light px-5">
+        <div class="go-back-to-cart"> <a href="/pages/cart.html"> <i class="fa-solid fa-caret-left"></i> Cart </a>
+        </div>
+        <p class="text-light m-0" style="text-wrap: wrap; "> Checkout with InkWaves | Glade you make it to here </p>
+        <div class="go-back-to-home">
+            <span style="font-family:  cairo; font-weight: bold; color:white;"> <a href="/index.html"> InkWaves </a>
+            </span>
+        </div>
+    </div>
+
+    <section class="section checkout-section ">
+        <div class="container w-90 d-xxl-flex ">
+            <div class="checkout-details-div">
+                <div class="shipping-details-div">
+                    <h4 class="payment-div-title"> Shipping Address </h4>
+                    <div class="shipping-details  d-flex border rounded p-2">
+
+                        <div class="address">
+                            <div class="address-line">
+                                <span class="shipping-details-name fw-bold text-uppercase"> Ahmad Haseeb </span>
+                                <span class="shipping-details-name"> +201555807058 </span>
+
+                            </div>
+                            <!-- From the backend object for each key create a div inside it use the keyname and its value to create a line  -->
+                            <div class="address-line"> <span class=" address-key fw-bold"> City : </span> <span> Burg Al
+                                    Arab </span></div>
+                            <div class="address-line"> <span class=" address-key fw-bold"> Street: </span> <span> Street
+                                    name </span></div>
+                            <div class="address-line"> <span class=" address-key fw-bold"> Building: </span> <span> Any
+                                    Building address Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+
+                                </span></div>
+                            <div class="address-line"> <span class=" address-key fw-bold"> Apartment: </span> <span> Any
+                                    apartment address </span></div>
+                            <div class="address-line"> <span class=" address-key fw-bold"> Marking place: </span> <span>
+                                    next to Fathalla Market
+                                </span></div>
+                        </div>
+                        <div class="change-adress py-2"> <button class='btn btn-primary'> Change Address </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="orders-to-checkout-div mt-4">
+                    <h4 class="payment-div-title"> Your orders </h4>
+                    <div class="orders-to-checkout border p-2 rounded ">
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="payment-methods-div mt-4">
+                    <h4 class="payment-div-title"> Payment Method </h4>
+                    <div class="payment-methods border p-2 rounded">
+                        <div class="use-wallet p-2">
+                            <input type="checkbox" id="wallet-check"> <label for="wallet-check"> Use Wallet's Balance
+                            </label> <span class="fw-bold"> EGP <span>20</span></span>
+                            <p class="check-balance"> Your wallet's balance is not enough to checkout you still need
+                                EGP<span class="needed-balance fw-bold"> 90 </span>, you proceed with another payment
+                                method to provide the needed sum.
+                            </p>
+                        </div>
+                        <div class="payment-methods-container">
+                            <div class="credit-card-option payment-option" option="credit">
+                                <i class="fa-solid fa-credit-card"></i>
+                                <span> Debit/Credit Card</span>
+                            </div>
+                            <div class="cash-on-delivery-option payment-option" option="cash">
+                                <i class="fa-solid fa-money-bill-1"></i>
+                                <span> Cash on delivery </span>
+                            </div>
+                        </div>
+
+                        <div class="pay-with-credit pay-with hidden" payment-method='credit'>
+                            <div class="payment-details using-credit mt-2">
+                                <h5> Stored Cards</h5>
+                                <div class="stored-cards ">
+                                    <div class="card-1 credit-card">
+                                        <input type="radio" name="credit-card" class="credit-card-radio" value="7765">
+                                        <label for="credit-card-radio">Card ending with <span
+                                                class="card-suffix fw-bold">
+                                                7765</span>
+                                            <input type="password" name="cvv" id="cvv" placeholder="CVV"
+                                                class="cvv-form-control" cvv-for-card="7765">
+                                        </label>
+                                    </div>
+                                    <div class="card-2 credit-card">
+                                        <input type="radio" name="credit-card" class="credit-card-radio" value='7996'>
+                                        <label for="credit-card-radio">Card ending with <span
+                                                class="card-suffix fw-bold">
+                                                7996</span>
+                                            <input type="password" name="cvv" id="cvv" placeholder="CVV"
+                                                class="cvv-form-control" cvv-for-card="7996">
+                                        </label>
+                                    </div>
+                                    <!-- Add new one here by js -->
+                                </div>
+
+                                <span class="add-new-card-btn text-primary fw-bold p-2 p2-5 d-inline-block fs-10 "> Add
+                                    a new card </span>
+
+                            </div>
+                            <div class="add-new-card hidden">
+                                <span
+                                    class="add-new-card-btn go-back-to-stored-cards-btn text-primary d-inline-block mt-4 fw-bold fs-10">
+                                    Go Back </span>
+
+                                <form action="" class=" credit-form d-flex gap-3 flex-column  mt-2">
+                                    <div class="credit-number">
+                                        <h6 class="credit-inputs-titles"> Card number </h6>
+                                        <input type="number" id="credit-card-number" placeholder=" **** **** **** **** "
+                                            class='credit-input'>
+                                    </div>
+
+                                    <div class="cvv-date d-flex gap-3" id="credit-card-expiry-date">
+                                        <div class="credit-card-date gap-2">
+                                            <h6 class="credit-inputs-titles"> Expiry date </h6>
+                                            <input type="number" id="credit-card-month" placeholder="MM"
+                                                class="credit-input">
+                                            <input type="number" id="credit-card-year" placeholder="YY"
+                                                class="credit-input">
+                                        </div>
+                                        <div class="credit-cvv">
+                                            <h6 class="credit-inputs-titles"> CVV </h6>
+                                            <input type="password" id="credit-card-cvv" placeholder="CVV"
+                                                class="cvv-form-control credit-input">
+                                        </div>
+                                    </div>
+                                    <div class="remember-card">
+                                        <input type="checkbox" name="" id="remember-card-checkbox"> <label
+                                            for="remember-card-checkbox"> Remember Card</label>
+                                        <p> By remembering this card InkWaves will not store the CVV number, still other
+                                            information will be securely stored to facilitate your future payments</p>
+                                    </div>
+                                    <input type="submit" id="submit-new-credit" value="Store Card"
+                                        class="btn btn-primary">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="pay-cash pay-with hidden" payment-method='cash'>
+                            <h2 class="pt-2"> Pay cash </h2>
+                            <p> No credit? no problem. Just receive tha package first and the pay comes after</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="payment-summary-div">
+                <div class="payment-summary">
+                    <div class="checkout-order-details border p-2 mb-2 rounded ">
+                        <h4> Order Details</h4>
+                        <div> <span> Sub total<span style="font-size: 0.7em; font-weight: normal;">
+                            including VAT.</span> </span> <span> EGP <span class = "checkout-subtotal">loading...</span> </span></div>
+                        <!-- <div class="text-danger"> <span> Wallet </span> <span> -EGP <span>20</span> </span></div> -->
+                        <div> <span> Shipping </span> <span > EGP <span class = "checkout-shipping"> loading...</span> </span></div>
+                        <hr>
+                        <div class="fw-bold"> <span> Total <!-- <span style="font-size: 0.7em; font-weight: normal;">
+                                    including VAT.</span> --> </span> <span> EGP <span class = "checkout-total">loading...</span> </span></div>
+                    </div>
+
+                    <div class="checkout-security-announcement">
+
+                        <h6 class="fw-bold"> Security and Privacy </h6>
+                        <p> Our checkout is safe and secure. Your personal and payment information is securely
+                            transmitted
+                            via 128-bit encryption. We do not store any payment card information on our systems</p>
+                        <p> © 2023 InkWaves. All Rights Reserved </p>
+                        <div> <a href=""> Terms and privacy </a></div>
+                    </div>
+
+                    <div class="place-order w-100 mt-2">
+                        <button class="btn btn-primary place-order-btn text-uppercase px-5" disabled> Place
+                            order</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- js bundle -->
+    <!-- summon the font awesome library -->
+    <script src="/assets/js/fa-js/all.min.js"></script>
+    <!-- summon the bootstrap toolkit -->
+    <script src="/assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- summon the js scripts -->
+    <script type="module" src="/assets/js/checkout.js"></script>
+
+    <!-- <script src="/assets/js/bootstrap.min.js.map"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- page icon -->
+    <link rel="icon" href="/assets/media/images/logo.ng.png">
+    <!-- Page title -->
+    <title> Ink waves </title>
+    <!-- css bundle -->
+    <!-- summon the font awesome library -->
+    <link rel="stylesheet" href="/assets/css/fa-css/all.min.css">
+    <!-- summon the bootstrap toolkit -->
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css.map">
+    <!-- summon the normalization file -->
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <!-- summon the media query stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style-media-query.css">
+    <!-- summon the stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- summon the Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=JetBrains+Mono:wght@100;200;300;400&family=Mulish:wght@200;300;400;500;600;700;800;900&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,200;0,300;0,600;0,800;0,900;1,200;1,400;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="page-announcement d-flex justify-content-between align-items-center bg-dark text-light px-5">
+        <!-- <div class="go-back-to-cart"> <a href="/pages/cart.html"> <i class="fa-solid fa-caret-left"></i> Cart </a>
+        </div> -->
+        <p class="text-light m-0" style="text-wrap: wrap; "> Print with InkWaves | Glade you chosen us</p>
+        <div class="go-back-to-home">
+            <span style="font-family:  cairo; font-weight: bold; color:white;"> <a href="/index.html"> InkWaves </a>
+            </span>
+        </div>
+    </div>
+
+    <span class="is-this-print-your-document-page"></span>
+    <!-- Printing options -->
+    <section class="print-with-options section">
+        <div class="printing-options final-printing-options " sectionOf="printing-options"
+            sectionTitle="Printing options">
+        </div>
+        <div class="printing-preview">
+            <div class="preview-cover p-2">
+                <!-- To style an input:file, hide the input it self and style the label, and don't forget to link the label with the input to respond as it is the input itself  -->
+                <div class="upload-and-options">
+                   
+                    <div class="upload-cover">
+                        <label for="file-input" class="custom-file-input btn btn-primary">Upload a cover </label>
+                        <input type="file" id="file-input" class="hidden" accept="image/*">
+                    </div>
+
+                    <div class="options">
+                        <div class="img-zoom">
+                            <input type="range" name="" id="cover-scale" min ='1' max = '200' value = '100'>
+                         </div>
+                        <div class="img-size-options border p-1" >
+                            <button class=" btn border bg-size-btn" background-size="cover"> Cover </button>
+                            <button class=" btn border bg-size-btn" background-size="contain"> Contain </button>
+                            <button class=" btn border bg-size-btn" background-size="auto"> Auto </button>
+                        </div>
+                        <div class="img-repeat-options border p-1">
+                            <button class=" btn border bg-repeat-btn" background-repeat="repeat"> repeat </button>
+                            <button class=" btn border bg-repeat-btn" background-repeat="no-repeat"> no-repeat </button>
+
+                        </div>
+                       
+                    </div>
+                </div>
+                
+
+                <!-- <div class="image-previewer-container border">
+                    
+                    <div class="image-previewer">
+
+                    </div>
+
+                </div> -->
+
+                <div class="drag-container" id="dragContainer">
+                    <div class="drag-content border" id="dragContent"></div>
+                </div>
+            </div>
+            <div class="options-summary border ">
+            </div>
+        </div>
+    </section>
+    <style>
+        #previewImage {
+            margin-top: 10px;
+        }
+    </style>
+
+
+    <!-- js bundle -->
+    <!-- summon the font awesome library -->
+    <script src="/assets/js/fa-js/all.min.js"></script>
+    <!-- summon the bootstrap toolkit -->
+    <script src="/assets\js\bootstrap\bootstrap.min.js"></script>
+    <script src="/assets\js\bootstrap\bootstrap.min.js.map"></script>
+    <!-- summon the js scripts -->
+    <script type="module" src="/assets/js/sharedJs/printing-options.js"></script>
+
+    <!-- <script src="/assets/js/bootstrap.min.js.map"></script> -->
+</body>
+
+</html>

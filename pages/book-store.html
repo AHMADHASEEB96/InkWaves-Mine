@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- page icon -->
+    <link rel="icon" href="/assets/media/images/logo.ng.png">
+    <!-- Page title -->
+    <title> Ink waves </title>
+    <!-- css bundle -->
+    <!-- summon the font awesome library -->
+    <link rel="stylesheet" href="/assets/css/fa-css/all.min.css">
+    <!-- summon the bootstrap toolkit -->
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css.map">
+    <!-- summon the normalization file -->
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <!-- summon the media query stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style-media-query.css">
+    <!-- summon the stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- summon the Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=JetBrains+Mono:wght@100;200;300;400&family=Mulish:wght@200;300;400;500;600;700;800;900&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,200;0,300;0,600;0,800;0,900;1,200;1,400;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+    <div class="body-overlay book-store-body-overlay hidden"></div>
+    <div class="spinner-border book-store-body-loader hidden" role="status">
+    </div>
+    <!-- ---------------------------------------------------------------Initiate Sign Modal window -->
+    <div id="sign-modal" class="hidden"></div>
+
+    <!--  Initiate header and navbar  -->
+    <div class="background-opacity hidden"></div>
+    <div class="upper-page"></div>
+
+
+
+    <!-- ---------------------------------------------------------------Initiate hero section -->
+    <!-- <div class="hero hidden" sectionOf="hero" >
+            <div class="container">
+                <div class="hero-content">
+                    <h3>All your printing and book selling services <br>in one place</h3>
+                    <p class="hero-description">
+                        Find the best selling books or Print one along with printing all your sheets with multiple
+                        options satisfying all of your needs.
+                    </p>
+                    <button id="book-store-btn" class="hero-service-btn main-hero-service-btn">Book Store</button>
+                    <button id="print-now-btn" class="hero-service-btn secondary-hero-service-btn"> Print Now</button>
+                </div>
+            </div>
+
+        </div> -->
+
+    <div class="hero-nav-container">
+        <ul class="hero-nav container">
+            <li style="font-family:  cairo; font-weight: bold; color: cadetblue;" id="page-nav-logo">InkWaves</li>
+            <!-- List items appended dynamically -->
+        </ul>
+    </div>
+
+    <div class="categories-modal-window hidden">
+        <button class = "close-categories-modal btn btn-secondary hidden"> Close </button>
+        <div class='book-category' category-name='all'> <span> All </span> </div>
+
+
+
+
+    </div>
+
+
+    <section class="book-store-sec section" sectionOf="Store" sectionTitle = 'Store'>
+        <div class="book-store-bar-container container border rounded">
+            
+            <div class="books-store-options">
+                <div>  <span class = " d-sm-none d-lg-inline-block"> In View: </span> <span class = "books-in-view fw-bold"> <!-- Number of books displayed here --></span></div>
+              <button class="btn btn-secondary categories-button d-lg-none"> Categories </button>
+                <div class="page-sizes-div">
+                    <h6 class = 'm-0 d-sm-none d-lg-inline-block' > Page size</h6>
+                    <div class="page-sizes d-flex gap-2"> <span class="page-size" value = '20'> 20 </span>  <span class="page-size" value = '40'> 40 </span> <span
+                            class="page-size" value = '60'> 60 </span><span class="page-size" value = '80'> 80 </span><span class="page-size" value = '100'> 100 </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="book-store-holder">
+                <aside class='book-categories-aside  d-sm-none d-lg-inline-block'>
+                    <div class='book-category' category-name='all'> <span> All </span> </div>
+                </aside>
+
+                <div class="book-store">
+
+                    <!-- JS Adds here  -->
+                </div>
+            </div>
+            <div class="pagination">
+                <div class="spinner-border pagination-loader hidden" role="status">
+                </div>
+                <button class="previous-page pagination-btn btn "> Previous</button>
+                <input type="number" name="" value='1' class="pagination-page-number border">
+                <button class="next-page pagination-btn btn "> Next</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ------------------------------------------------------------ Initiate Footer ------------------------------------------->
+    <footer></footer>
+
+    <!-- js bundle -->
+    <!-- summon the font awesome library -->
+    <script src="/assets/js/fa-js/all.min.js"></script>
+    <!-- summon the bootstrap toolkit -->
+    <script src="/assets\js\bootstrap\bootstrap.min.js"></script>
+    <script src="/assets\js\bootstrap\bootstrap.min.js.map"></script>
+    <!-- summon the js scripts -->
+    <script src="/assets/js/sharedJs/header-footer-and-sign-modal.js"></script>
+    <script type="module" src="/assets/js/book-store.js"></script> <!-- Must be a module as long await is used outside an async function -->
+
+    <!-- <script src="/assets/js/bootstrap.min.js.map"></script> -->
+</body>
+
+</html>
