@@ -49,11 +49,11 @@ printingOPtions.innerHTML = `
     <div class="options-category printing-layout">
         <h5>Printing Layout</h5>
         <div class="category-options printing-layout-options">
-            <img src="/assets/media/images/printing options/label (1).png" alt="printing layout 1"
+            <img src="./assets/media/images/printing options/label (1).png" alt="printing layout 1"
                 class="printing-layout-img" options-category = 'printingLayout' chosen-option="single">
-            <img src="/assets/media/images/printing options/label (2).png" alt="printing layout 2"
+            <img src="../assets/media/images/printing options/label (2).png" alt="printing layout 2"
                 class="printing-layout-img" options-category = 'printingLayout' chosen-option="double-tall">
-            <img src="/assets/media/images/printing options/label (3).png" alt="printing layout 3"
+            <img src="assets/media/images/printing options/label (3).png" alt="printing layout 3"
                 class="printing-layout-img" options-category = 'printingLayout' chosen-option="quadrant-tall">
             <img src="/assets/media/images/printing options/label (4).png" alt="printing layout 4"
                 class="printing-layout-img" options-category = 'printingLayout' chosen-option="double-short">
